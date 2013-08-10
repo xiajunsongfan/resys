@@ -1,16 +1,12 @@
 ---
 layout: default
-title: ÎÒµÄBlog
 ---
+<section role="banner">
+  <img src="/img/banner.jpg" />
+</section>
 
-<h2>{{ page.title }}</h2>
-
-<p>new </p>
-
-<ul>
-
-{% for post in site.posts %}
-
-<li>{{ post.date | date_to_string }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
-{% endfor %}
-</ul>
+<section class="content">
+  <p>
+  Welcome to John Doe Photography! Please, check out my <a href="/portfolio/">Portfolio</a> to see my work.
+  </p>
+</section>
