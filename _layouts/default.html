@@ -19,7 +19,7 @@
           <nav role="navigation">
             <ul>
               <li>
-                <a href="/"> Home </a>
+                <a href="/resys"> Home </a>
               </li>
               <li>
                 <a href="/portfolio/"> Portfolio </a>
@@ -33,6 +33,16 @@
             </ul>
           </nav>
           {{ content }}
+		  <ul class="entries">
+				{% for post in site.posts %}
+				<li>
+				  <a href="{{ post.url }}">
+					<img src="{{ post.image }}" / >
+					<h3 > {{ post.title }} < /h3>
+				  </a >
+				</li>
+				{% endfor %}
+		  </ul >
           <footer>
             <p>
               @copy; John Doe Photography 2011 | All Rights Reserved.
