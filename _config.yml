@@ -1,3 +1,9 @@
-safe: true
-lsi: false
+name: 帷幕下的梦
+url: http://www.itv9.cn
+description: xiaoxia来自jd的推荐工程师
+
+permalink: /:year/:month/:day/:title/
+paginate: 4
 pygments: true
+
+exclude: ['README.md', 'Gemfile.lock', 'Gemfile', 'Rakefile']
