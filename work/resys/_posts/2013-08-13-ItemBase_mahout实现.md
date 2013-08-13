@@ -6,7 +6,7 @@ category: resys
 ---
 ##Mahout 协同过滤思想--ItemBase
 **author : xiajun**</br>
----
+-
 当根据item算出矩阵后的协同过滤实现思想
 ABCD为商品 U1,U2为用户对商品的评价</br>
 **NAN**在矩阵中很重要,mahout做过滤都是使用NAN(原理NAN+任意数字后仍然为NAN)
