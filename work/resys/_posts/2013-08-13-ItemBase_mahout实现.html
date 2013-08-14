@@ -441,7 +441,7 @@ VectorAndPrefsWritable vectorAndPrefs = new VectorAndPrefsWritable(similarityMat
 context.write(key, vectorAndPrefs);
 }
 </code></pre>
-
+<!--break-->
 <p>经过reduce后输出文件格式为:Item:[[{Item1:pre-I1},{Item2:pre-I2}],{User1,User2},{Pre-u1,pre-u2}]</br>
 A:[[{B:0.12},{D:0.4},{A:NAN}],{U1},{2}]</p>
 <p>B:[[{A:0.1},{D:0.5},{B:NAN}],{U2},{3}]</p>
