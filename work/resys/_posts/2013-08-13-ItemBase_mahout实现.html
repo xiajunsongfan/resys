@@ -416,7 +416,8 @@ C:[{B:0.2},{D:0.3},{C:NAN}]</br>
 D:[{A:0.4},{B:0.2},{D:NAN}]</br></p>
 <h3>4.将2、3两步作为输入文件传入partialMultiply-Job</h3>
 <p>以上文件将以item为key传入reduce方法中</p>
-<pre><code>void reduce(VarIntWritable key,Iterable values,Context context){
+{% highlight java linenos  %}
+void reduce(VarIntWritable key,Iterable values,Context context){
 
 List&lt;Long&gt; userIDs = Lists.newArrayList();//存放Item中的用户
 List&lt;Float&gt; prefValues = Lists.newArrayList();//存放用户对应的评分
@@ -440,7 +441,7 @@ if (similarityMatrixColumn == null) {
 VectorAndPrefsWritable vectorAndPrefs = new VectorAndPrefsWritable(similarityMatrixColumn, userIDs, prefValues);
 context.write(key, vectorAndPrefs);
 }
-</code></pre>
+{% endhighlight %}
 <!--break-->
 <p>经过reduce后输出文件格式为:Item:[[{Item1:pre-I1},{Item2:pre-I2}],{User1,User2},{Pre-u1,pre-u2}]</br>
 A:[[{B:0.12},{D:0.4},{A:NAN}],{U1},{2}]</p>
@@ -449,7 +450,8 @@ A:[[{B:0.12},{D:0.4},{A:NAN}],{U1},{2}]</p>
 <p>D:[[{A:0.4},{B:0.2},{D:NAN}],{U1,U2},{3,1}]</p>
 <h3>5.aggregateAndRecommend-JOb 将文件转为用户推荐</h3>
 <p>Map：PartialMultiplyMapper 以第4步为输入文件</p>
-<pre><code>void map(VarIntWritable key,
+{% highlight java linenos  %}
+void map(VarIntWritable key,
 VectorAndPrefsWritable vectorAndPrefsWritable,
                  Context context) throws IOException, InterruptedException {
 
@@ -470,7 +472,7 @@ for (int i = 0; i &lt; userIDs.size(); i++) {//迭代用户列表
   }
  }
 }
-</code></pre>
+{% endhighlight %}
 
 <p><strong>输出：</strong></p>
 <p>U1:[2,[{B:0.12},{D:0.4},{A:NAN}]]</p>
