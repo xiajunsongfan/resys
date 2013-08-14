@@ -1,19 +1,9 @@
 ---
 layout: default
 ---
-<article class="post">
-
-	{% if page.external-url %}
-		<h1>
-			<a href="{{ page.external-url }}">{{ page.title }}</a> 
-			<a class="anchor" href="{{ page.url }}"><i class="icon-anchor"></i></a>
-		</h1>
-	{% else %}
-		<h1><a href="{{ page.url }}">{{ page.title }}</a></h1>
-	{% endif %}
-
-	<div class="post-content">{{ content }}</div>
-
-	<p class="meta">发布时间 <span class="postdate">{{ page.date | date: "%Y-%m-%d" }}</span></p>
-
-</article>
+<link rel="stylesheet" href="{{ ASSET_PATH }}/google/prettify.css" />
+<link rel="stylesheet" href="{{ ASSET_PATH }}/google/desert.css" />
+{% include JB/setup %}
+{% include themes/twitter/post.html %}
+<script src="/google/prettify.js"></script>
+<script>prettyPrint();</script>
