@@ -10,9 +10,9 @@ tags : [bigData, hive, hbase, hadoop]
 -
 **前提:**
 
-1 .Hadoop和Hbase都已经成功安装了
+1.Hadoop和Hbase都已经成功安装了
 
-2 . 拷贝hbase-0.94.6.jar和zookeeper-3.4.5.jar，protobuf-java-2.4.0a.jar 到hive/lib下。
+2.拷贝hbase-0.94.6.jar和zookeeper-3.4.5.jar，protobuf-java-2.4.0a.jar 到hive/lib下。
 
     注意：如果hive/lib下已经存在这两个文件的其他版本（例如zookeeper-3.3.2.jar），建议删除后使用hbase下的相关版本。
 
@@ -33,11 +33,11 @@ tags : [bigData, hive, hbase, hadoop]
 
 5.拷贝hbase/conf下的hbase-site.xml文件到所有hadoop节点(包括master)的hadoop/conf下。
 
-6.1.单节点启动
+6.1单节点启动
 
 	./bin/hive -hiveconf hbase.master=master:490001
 
-6.2 集群启动：
+6.2集群启动：
 
 	./bin/hive -hiveconf hbase.zookeeper.quorum=node1,node2,node3
 
