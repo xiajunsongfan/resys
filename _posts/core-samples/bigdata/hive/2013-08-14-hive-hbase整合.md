@@ -18,18 +18,17 @@ tags : [bigData, hive, hbase, hadoop]
 
 3.修改hive/conf下hive-site.xml文件，在底部添加如下内容：
 
-<?prettify lang=xml linenums=true?>
-<pre class="prettyprint linenums" id="quine" style="border:4px solid #88c">
-<property>          
-  <name>hive.querylog.location</name>          
-  <value>/usr/local/hive/logs</value>          
-</property>          
-                
-<property>         
-  <name>hive.aux.jars.path</name>          
-  <value>file:///usr/local/hive/lib/hive-hbase-handler-0.8.0.jar,file:///usr/local/hive/lib/hbase-0.90.4.jar,file:///usr/local/hive/lib/zookeeper-3.3.2.jar</value>         
- </property>
-</pre>
+	<property>          
+	  <name>hive.querylog.location</name>          
+	  <value>/usr/local/hive/logs</value>          
+	</property>          
+	                
+	<property>         
+	  <name>hive.aux.jars.path</name>          
+	  <value>file:///usr/local/hive/lib/hive-hbase-handler-0.8.0.jar,file:///usr/local/hive/lib/hbase-0.90.4.jar,file:///usr/local/hive/lib/zookeeper-3.3.2.jar</value>         
+	</property>
+
+
 4.拷贝hbase-0.94.6.jar  protobuf-java-2.4.0a.jar 到所有hadoop节点(包括master)的hadoop/lib下。
 
 5.拷贝hbase/conf下的hbase-site.xml文件到所有hadoop节点(包括master)的hadoop/conf下。
