@@ -1,4 +1,11 @@
-##Mahout SVD-奇异值分解
+---
+layout: post
+title:  "hive-hbase整合"
+date:   2013-08-14 19:03:11
+category: bigData
+tags : [bigData, hive, hbase, hadoop]
+---
+##hive-hbase整合
 **author : xiajun**
 -
 **前提:**
