@@ -18,7 +18,7 @@ tags : [bigData, hive, hbase, hadoop]
 
 3.修改hive/conf下hive-site.xml文件，在底部添加如下内容：
 
-<xmp>
+<pre><xmp>
 <property>
 <name>hive.querylog.location</name>
 <value>/usr/local/hive/logs</value>
@@ -27,8 +27,8 @@ tags : [bigData, hive, hbase, hadoop]
 <property>
 <name>hive.aux.jars.path</name>
 <value>file:///usr/local/hive/lib/hive-hbase-handler-0.8.0.jar,file:///usr/local/hive/lib/hbase-0.90.4.jar,file:///usr/local/hive/lib/zookeeper-3.3.2.jar</value>
-</property>
-</xmp>
+</property></xmp>
+</pre>
 
 4.拷贝hbase-0.94.6.jar  protobuf-java-2.4.0a.jar 到所有hadoop节点(包括master)的hadoop/lib下。
 
