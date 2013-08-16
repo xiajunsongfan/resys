@@ -77,6 +77,7 @@ map:将item与item间的评分聚合
 reduce 输入itemA:[itemB:Pab,itemC:Pac]
 
 相似度计算：
+
 	double similarityValue = similarity.similarity(b.get(), normA, norms.getQuick(b.index()), numberOfColumns);
 	//b.get()为Pab normA为评价了A的人数,norms.getQuick(b.index())为评价了B的人数,numberOfColumns为整个input文件中的总人数.
 		
