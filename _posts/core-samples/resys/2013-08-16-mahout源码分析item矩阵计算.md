@@ -77,8 +77,7 @@ map:将item与item间的评分聚合
 reduce 输入itemA:[itemB:Pab,itemC:Pac]
 
 相似度计算：
-<?prettify lang=java linenums=true?>
-<pre class="prettyprint linenums" id="quine" style="border:4px solid #88c">
+
 double similarityValue = similarity.similarity(b.get(), normA, norms.getQuick(b.index()), numberOfColumns);
 //b.get()为Pab normA为评价了A的人数,norms.getQuick(b.index())为评价了B的人数,numberOfColumns为整个input文件中的总人数.
 	
@@ -86,7 +85,7 @@ public double similarity(double dots, double normA, double normB, int numberOfCo
    double euclideanDistance = Math.sqrt(normA - 2 * dots + normB);
    return 1.0 / (1.0 + euclideanDistance);
 }
-</pre>
+
 输出:itemA:{itemB:Pabsimi,itenC:Pacsimi}
 
 3.asMatrix 获取每个item相似度高的top值
