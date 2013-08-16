@@ -80,7 +80,7 @@ reduce 输入itemA:[itemB:Pab,itemC:Pac]
 <?prettify lang=java linenums=true?>
 <pre class="prettyprint linenums" id="quine" style="border:4px solid #88c">
 double similarityValue = similarity.similarity(b.get(), normA, norms.getQuick(b.index()), numberOfColumns);
-//b.get()为Pab normA为评价了A的人数,norms.getQuick(b.index())为评价了B的人数,numberOfColumns为整个input文件中的总人数
+//b.get()为Pab normA为评价了A的人数,norms.getQuick(b.index())为评价了B的人数,numberOfColumns为整个input文件中的总人数.
 	
 public double similarity(double dots, double normA, double normB, int numberOfColumns) {//欧式距离
    double euclideanDistance = Math.sqrt(normA - 2 * dots + normB);
