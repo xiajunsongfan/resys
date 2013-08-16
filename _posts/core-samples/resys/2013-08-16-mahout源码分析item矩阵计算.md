@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "#mahout源码分析item矩阵计算"
+title:  "mahout源码分析item矩阵计算"
 date:   2013-08-16 15:03:11
 category: mahout
 tags : [推荐, java, mahout, hadoop]
