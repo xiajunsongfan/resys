@@ -6,7 +6,7 @@ category: mahout
 tags : [推荐, java, mahout, hadoop]
 ---
 ##mahout源码分析item矩阵计算
-**author : xiajun**</br>
+**author : xiajun**
 -
 **简介：**
 
