@@ -2,7 +2,7 @@
 layout: post
 title:  "hive-hbase整合"
 date:   2013-08-14 19:03:11
-category: bigData
+category: hive
 tags : [bigData, hive, hbase, hadoop]
 ---
 ##hive-hbase整合
