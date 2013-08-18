@@ -18,7 +18,9 @@ tags : [bigData, hive, hbase, hadoop]
 
 三. 修改hive/conf下hive-site.xml文件，在底部添加如下内容：
 
-<pre><xmp>
+<?prettify lang=xml linenums=true?>
+<pre class="prettyprint linenums" id="quine" style="border:4px solid #88c">
+<xmp>
  <property>
  <name>hive.querylog.location</name>
  <value>/usr/local/hive/logs</value>
