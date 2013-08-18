@@ -1,11 +1,11 @@
 ---
 layout: post
-title:  "mahout源码分析item矩阵计算"
+title:  "ItemBase_mahout源码分析一"
 date:   2013-08-16 15:03:11
 category: mahout
 tags : [推荐, java, mahout, hadoop]
 ---
-##mahout源码分析item矩阵计算
+##ItemBase_mahout源码分析一
 **author : xiajun**
 -
 **简介：**
