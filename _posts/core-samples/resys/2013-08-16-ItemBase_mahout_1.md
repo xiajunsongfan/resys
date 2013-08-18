@@ -94,3 +94,27 @@ map输入 itemA:{itemB:Pabsimi,itenC:Pacsimi}
 输出：itemA:{itemB:Pabsimi,itenC:Pacsimi} top个
 
 reduce：输出 itemA:{itemB:Pabsimi,itenC:Pacsimi}  再次过滤top值
+
+**参数介绍：**
+
+numRecommendations：为每个用户生成的推荐用户数量
+
+usersFile：设置偏爱的用户
+
+itemsFile：设置偏爱的项目
+
+filterFile：userID,itemID  这种格式的文件，用于排除推荐
+
+booleanData：是否为无评分的
+
+maxPrefsPerUser：最多取n个评价了item的用户及评分（如：一个用户对应100个商品时，那么只有n个会进入矩阵计算,在recommendjob类中使用的位置不同但同样是一个用户参与矩阵计算的最大商品数）
+
+minPrefsPerUser：用户最少对多少个商品进行了评分后才可以进行计算(如：一个用户对应的商品少于n时此用户不进入矩阵计算)
+
+maxSimilaritiesPerItem：每个产品最多考虑多少个最相似产品
+
+maxPrefsPerUserInItemSimilarity：取出n个用户的对商品的评价进行计算（在使用recommendjob时 和maxPrefsPerUser一样）
+
+similarityClassname：使用的相似算法
+
+threshold：丢弃相似值低于该项目的项
