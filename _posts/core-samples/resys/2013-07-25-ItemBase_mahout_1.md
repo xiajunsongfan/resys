@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "ItemBase_mahout源码分析一"
-date:   2013-08-16 15:03:11
+date:   2013-07-25
 category: mahout
 tags : [推荐, java, mahout, hadoop]
 ---
