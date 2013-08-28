@@ -5,9 +5,8 @@ date:   2013-08-14 19:03:11
 category: hive
 tags : [bigData, hive, hbase, hadoop]
 ---
-##hive-hbase整合
-**author : xiajun**
--
+author : xiajun
+
 **前提:**
 
 一. Hadoop和Hbase都已经成功安装了
