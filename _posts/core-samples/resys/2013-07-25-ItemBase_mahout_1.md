@@ -10,6 +10,8 @@ tags : [推荐, mahout, hadoop]
 -
 **简介：**
 
+本章介绍mahout itemBase 相似度的计算
+
 itemMatrix是计算两个商品之间的距离。
 
 **mahout实现:**
