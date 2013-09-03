@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "ItemBase_mahout源码分析一"
+title:  "mahout itemBase 源码分析一"
 date:   2013-07-25
 category: mahout
-tags : [推荐, java, mahout, hadoop]
+tags : [推荐, mahout, hadoop]
 ---
 ##item矩阵计算
 **author : xiajun**
