@@ -73,7 +73,7 @@ author : xiajun
 
 	CREATE TABLE gdm.pokes (foo INT, bar STRING COMMENT '中文注释');//表默认建在default库上，gdm.pokes 表示表建在gdm库上
 
-	create table test(id int,name string) row format delimited fields terminated by '\t' LOCATION 'hdfs://xxx 指向必须是目录 如果不存在会自己创建';
+	create [external] table test(id int,name string) row format delimited fields terminated by '\t' LOCATION 'hdfs://xxx 指向必须是目录 如果不存在会自己创建'; external 是创建外部表的关键字
 
 	drop table test;
 
