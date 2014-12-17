@@ -98,10 +98,10 @@ author : xiajun
 
 8_1.将select的结果放到一个的的表格中（首先要用create table创建新的表格）
 	
-	insert overwrite table test select uid,name from test2;</br>
+	insert overwrite table test select uid,name from test2;<br>
 8_2.将select的结果放到本地文件系统中
 
-	INSERT OVERWRITE LOCAL DIRECTORY  '/tmp/reg_3'  SELECT a.* FROM events a;</br>
+	INSERT OVERWRITE LOCAL DIRECTORY  '/tmp/reg_3'  SELECT a.* FROM events a;<br>
 8_3.将select的结果放到hdfs文件系统中
 
 	INSERT OVERWRITE DIRECTORY  '/tmp/hdfs_out' SELECT a.* FROM invites a WHERE a.ds='《DATE>';</br>
