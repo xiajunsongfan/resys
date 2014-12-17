@@ -98,26 +98,26 @@ author : xiajun
 
 8_1.将select的结果放到一个的的表格中（首先要用create table创建新的表格）
 	
-	insert overwrite table test select uid,name from test2;
+	insert overwrite table test select uid,name from test2;</br>
 8_2.将select的结果放到本地文件系统中
 
-	INSERT OVERWRITE LOCAL DIRECTORY  '/tmp/reg_3'  SELECT a.* FROM events a;
+	INSERT OVERWRITE LOCAL DIRECTORY  '/tmp/reg_3'  SELECT a.* FROM events a;</br>
 8_3.将select的结果放到hdfs文件系统中
 
-	INSERT OVERWRITE DIRECTORY  '/tmp/hdfs_out' SELECT a.* FROM invites a WHERE a.ds='《DATE>';
+	INSERT OVERWRITE DIRECTORY  '/tmp/hdfs_out' SELECT a.* FROM invites a WHERE a.ds='《DATE>';</br>
 8_4.将查询结构放入新建表中。
 
-	create table test2 as select count(id) as count from test group by name order by count desc;
+	create table test2 as select count(id) as count from test group by name order by count desc;</br>
 9.使用自定义inputformat
 
-	create table test(id int,name string) row format delimited fields terminated by ' ' STORED AS inputformat 'com.MyInputformat'  outputformat 'com.MyOutputformat';
+	create table test(id int,name string) row format delimited fields terminated by ' ' STORED AS inputformat 'com.MyInputformat'  outputformat 'com.MyOutputformat';</br>
 例子：
 
 	create table score(name string, score map《string,int>)
 	ROW FORMAT DELIMITED
 	FIELDS TERMINATED BY '\t'
 	COLLECTION ITEMS TERMINATED BY ','
-	MAP KEYS TERMINATED BY ':';
+	MAP KEYS TERMINATED BY ':';</br>
 要入库的数据
 
 	zhang '数学':80,'语文':89,'英语':95
