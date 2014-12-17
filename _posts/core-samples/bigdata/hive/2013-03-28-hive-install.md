@@ -79,7 +79,9 @@ author : xiajun
 
 	describe test; //查看test表的结构 简写 desc table
 
-	describe extended test; //查看test表的详细属性 
+	describe extended test; //查看test表结构详细属性 
+
+	desc formatted test; //查看test表的详细属性 
 
 	alter table test rename to test2; 将表名test修改为test2
 
