@@ -124,6 +124,13 @@ author : xiajun
 	COLLECTION ITEMS TERMINATED BY ','
 	MAP KEYS TERMINATED BY ':';
 
+    ROW FORMAT DELIMITED
+    FIELDS TERMINATED BY '\001'
+    COLLECTION ITEMS TERMINATED BY '\002'
+    MAP KEYS TERMINATED BY '\003'
+    STORED AS TEXTFILE;
+    [ROW FORMAT DELIMITED]关键字，是用来设置创建的表在加载数据的时候，支持的列分隔符。不同列之间用一个'\001'分割,集合(例如array,map)的元素之间以'\002'隔开,map中key和value用'\003'分割。
+
 要入库的数据
 
 	zhang '数学':80,'语文':89,'英语':95
