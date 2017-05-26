@@ -27,13 +27,13 @@ Usage:
     {% if node.title != null %}
       {% if group == null or group == node.group %}
       	{% if page.url == node.url %}
-      	<li class="active"><a href="{{ BASE_PATH }}{{node.url}}" class="active" target="_blank">{{node.title}}</a></li>
+      	<li class="active"><a href="/resys{{ BASE_PATH }}{{node.url}}" class="active" target="_blank">{{node.title}}</a></li>
       	{% else %}
       	<li>
 	{% if node.title == '标签' or node.title == '页面' or node.title == '分类' or node.title == 'Archive'%}
-	   <a href="{{ BASE_PATH }}{{node.url}}">{{node.title}}</a>
+	   <a href="/resys{{ BASE_PATH }}{{node.url}}">{{node.title}}</a>
 	{% else %}
-	   <a href="{{ BASE_PATH }}{{node.url}}" target="_blank">{{node.title}}</a>
+	   <a href="/resys{{ BASE_PATH }}{{node.url}}" target="_blank">{{node.title}}</a>
         {% endif %}
 	</li>
       	{% endif %}
